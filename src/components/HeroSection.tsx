@@ -1,25 +1,14 @@
 import { useRef } from "react";
 import hero from "/hero.jpeg";
-import { screenHeight, screenWidth } from "../utils/utils";
 
 const HeroSection = () => {
   const heroSectionRef = useRef(null);
-
-  // const sectionHeight = window.innerHeight;
-  const sectionHeight = screenHeight - 96;
 
   return (
     <section
       id="heroSection"
       ref={heroSectionRef}
       className={`bg-[#F2F2F2] rounded-3xl mt-24 py-20 h-fit `}
-      // style={{
-      //   // height: sectionHeight - 96,
-      //   height: screenWidth > 768 ? sectionHeight : "auto",
-      //   minHeight: sectionHeight,
-      //   maxHeight: screenWidth > 768 ? sectionHeight : "auto",
-      //   // maxHeight: screenWidth,
-      // }}
     >
       <div className="container h-full mx-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center ">
         <div className=" h-full md:w-1/2 flex flex-col items-center justify-center md:justify-start md:items-start ">

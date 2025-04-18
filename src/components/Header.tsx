@@ -11,8 +11,6 @@ const Header = () => {
   const homeCheck = activeLink === "home";
   const servicesCheck = activeLink === "services";
   const aboutUsCheck = activeLink === "aboutUs";
-  // const faqCheck = activeLink === "faq";
-  const contactUsCheck = activeLink === "contactUs";
 
   const navHeight = window.innerHeight - 80;
 
